@@ -1,4 +1,4 @@
-[
+var myContent = [
     {
         "title": "JSON Tools",
         "links": {
@@ -17,6 +17,23 @@
             "https://photos.google.com/": "Google Photos",
             "https://contacts.google.com/": "Google Contacts",
             "https://www.google.com/android/devicemanager": "Android Device Manager"
+        }
+    },
+    {
+        "title": "Search",
+        "contents": {
+            "googleSearch": [
+                "<form action='http://google.com/search'>",
+                "<div style='width:80px; float:left'>Google:</div> <input autocomplete='off' name='q' id='googleSearch' style='width:100px'",
+                "style='border:1px solid #aaaaaa; padding: 2px; margin: 0px; height: 20px; width: 150px;'/>",
+                "</form>"
+            ],
+            "wikipediaSearch": [
+                "<form action='https://en.wikipedia.org/wiki/Special:Search'>",
+                "<div style='width:80px; float:left'>Wikipedia:</div> <input autocomplete='off' name='search' style='width:100px'",
+                "style='border:1px solid #aaaaaa; padding: 2px; margin: 0px; height: 20px; width: 150px;'/>",
+                "</form>"
+            ]
         }
     },
     {
@@ -64,22 +81,5 @@
             "Reload profile": "source ~/.bash_profile",
             "Show one environment variable": "echo $envname"
         }
-    },
-    {
-        "title": "Search",
-        "contents": {
-            "googleSearch": [
-                "<form action='http://google.com/search'>",
-                "<div style='width:80px; float:left'>Google:</div> <input autocomplete='off' name='q' id='googleSearch' style='width:100px'",
-                "style='border:1px solid #aaaaaa; padding: 2px; margin: 0px; height: 20px; width: 150px;'/>",
-                "</form>"
-            ],
-            "wikipediaSearch": [
-                "<form action='https://en.wikipedia.org/wiki/Special:Search'>",
-                "<div style='width:80px; float:left'>Wikipedia:</div> <input autocomplete='off' name='search' style='width:100px'",
-                "style='border:1px solid #aaaaaa; padding: 2px; margin: 0px; height: 20px; width: 150px;'/>",
-                "</form>"
-            ]
-        }
     }
-]
+];

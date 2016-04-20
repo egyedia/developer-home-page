@@ -23,8 +23,8 @@ homepageDirectives.directive('ngRepeatFinished', ['$timeout',
 
 var homepageControllers = angular.module('homepageControllers', []);
 
-homepageControllers.controller('HomeCtrl', ['$scope', '$sce', '$http',
-    function ($scope, $sce, $http) {
+homepageControllers.controller('HomeCtrl', ['$scope', '$sce',
+    function ($scope, $sce) {
         $scope.isArray = angular.isArray;
         
         $scope.getHTML = function (lines) {
@@ -43,8 +43,6 @@ homepageControllers.controller('HomeCtrl', ['$scope', '$sce', '$http',
                 gutter: 20
             });
         };
-
-        $http.get('mycontent.json').then(function (response) {
-            $scope.boxes = response.data;
-        });
+        
+        $scope.boxes = myContent;
     }]);
